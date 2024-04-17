@@ -2,22 +2,37 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
     <button class="btn-open" data-modal-open>Відкрити модалку</button>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="btn" data-modal-close>Закрити</button>
-            <p>....</p>
+            <button class="close__btn" data-modal-close>
+                <svg class="close__icon">
+                    <use href="./icons/spryt.svg#icon-close"></use>
+                </svg>
+            </button>
+            <form class="form">
+                <h1 class="modal__title">Reach out to us!</h1>
+                <label class="modal__label" for="">
+                    <input placeholder="Your name" class="modal__input" type="text" />
+                </label>
+                <label class="modal__label" for="">
+                    <input placeholder="Your e-mail" class="modal__input" type="text" />
+                </label>
+                <label placeholder="Your message" class="modal__label" for="">
+                    <textarea class="modal__input" name="message" id="" cols="30" rows="10"></textarea>
+                </label>
+                <button class="modal-button" type="submit">Send message</button>
+            </form>
         </div>
     </div>
-
 
     <script src="./modal.js"></script>
 </body>
