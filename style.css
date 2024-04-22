@@ -1,3 +1,46 @@
+.header {}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url(./images/ai-generated-7809190_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+}
+
+.hero__thumb {
+    border: 3px solid yellow;
+    position: absolute;
+    border-radius: 20px;
+}
+
+/* .hero__left-image {
+    width: 800px;
+    position: absolute;
+    bottom: 300px;
+    left: 300px;
+}
+
+.hero__right-image {
+    width: 600px;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+} */
+
+.hero__thumb-left {
+    width: 800px;
+    bottom: 300px;
+    left: 300px;
+}
+
+.hero__thumb-right {
+    width: 600px;
+    top: 100px;
+    right: 100px;
+}
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -29,6 +72,7 @@
     border-radius: 4px;
     background-color: #fff;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px, 1px, 0px rgba(0, 0, 0, 0.14), ;
+    overflow: scroll;
 }
 
 .close__icon {
