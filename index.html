@@ -10,14 +10,28 @@
 </head>
 
 <body>
-    <header class="header"></header>
+    <header class="header">
+        <ul class="header__list">
+            <li class="header__item"><a href="" class="header__link current">home</a></li>
+            <li class="header__item"><a href="" class="header__link">about</a></li>
+            <li class="header__item"><a href="" class="header__link">projects</a></li>
+            <li class="header__item"><a href="" class="header__link">contact</a></li>
+        </ul>
+    </header>
     <main>
         <section class="hero">
-            <div class="hero__thumb-right hero__thumb">
-                <img src="./images/piano-7795476_1280.jpg" alt="photo" class="hero__left-image">
+            <div class="card">
+                <div class="hero__thumb-right hero__thumb">
+                    <img src="./images/ai-generated-8689197_1280.jpg" alt="cat" class="hero__right-image">
+                    <div class="overlay">
+                        <p class="overlay__text">
+                            Lorem, ipsum dolor.
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="hero__thumb-left hero__thumb">
-                <img src="./images/ai-generated-8689197_1280.jpg" alt="cat" class="hero__right-image">
+                <img src="./images/piano-7795476_1280.jpg" alt="photo" class="hero__right-image">
             </div>
             <button class="btn-open" data-modal-open>Відкрити модалку</button>
         </section>
