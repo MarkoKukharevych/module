@@ -1,7 +1,16 @@
+.body {
+    scroll-behavior: smooth;
+}
+
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #fff;
     color: black;
     padding: 30px 50px;
+    z-index: 10;
 }
 
 .header__list {
@@ -92,6 +101,22 @@
 
 .overlay__text {
     color: #fff;
+}
+
+.section {
+    height: 100vh;
+}
+
+#about {
+    background-color: aqua;
+}
+
+#projects {
+    background-color: blueviolet;
+}
+
+#contact {
+    background-color: aquamarine;
 }
 
 .backdrop {
