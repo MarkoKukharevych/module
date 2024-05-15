@@ -5,14 +5,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-    <header class="header">
+    <header class="header animate__animated animate__bounceInDown">
+        <div class="animate__animated animate__bounce animate__delay-2s">Example</div>
         <ul class="header__list">
-            <li class="header__item"><a href="" class="header__link current">home</a></li>
+            <li class="header__item"><a href="" class="header__link">home</a></li>
             <li class="header__item"><a href="#about" class="header__link">about</a></li>
             <li class="header__item"><a href="#projects" class="header__link">projects</a></li>
             <li class="header__item"><a href="#contact" class="header__link">contact</a></li>
@@ -21,7 +24,7 @@
     <main>
         <section class="hero">
             <div class="card">
-                <div class="hero__thumb-right hero__thumb">
+                <div class="hero__thumb-right hero__thumb" data-aos="zoom-out">
                     <img src="./images/ai-generated-8689197_1280.jpg" alt="cat" class="hero__right-image">
                     <div class="overlay">
                         <p class="overlay__text">
@@ -30,7 +33,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hero__thumb-left hero__thumb">
+            <div class="hero__thumb-left hero__thumb" data-aos="fade-right">
                 <img src="./images/piano-7795476_1280.jpg" alt="photo" class="hero__right-image">
             </div>
             <button class="btn-open" data-modal-open>Відкрити модалку</button>
@@ -63,6 +66,10 @@
     </div>
 
     <script src="./modal.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
