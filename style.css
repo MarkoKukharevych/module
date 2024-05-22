@@ -6,6 +6,23 @@
     scroll-behavior: smooth;
 }
 
+@keyframes change_bg_color {
+    0% {
+        background-color: black;
+        color: #fff;
+    }
+
+    50% {
+        background-color: rgb(56, 47, 47);
+        color: #fff;
+    }
+
+    100% {
+        background-color: rgb(78, 59, 59);
+        color: #fff;
+    }
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -15,6 +32,7 @@
     color: black;
     padding: 30px 50px;
     z-index: 10;
+    animation: change-bg-color 1000ms ease-in-out infinite;
 }
 
 .header__list {
@@ -24,6 +42,10 @@
 }
 
 .header__item {}
+
+.header__link:hover .header {
+    animation: change-bg-color 1000ms ease-in-out infinite;
+}
 
 .header__link::after {
     content: '';
@@ -53,6 +75,28 @@
     background-size: con;
 }
 
+@keyframes border-color {
+    0% {
+        border: 3px solid sandybrown;
+    }
+
+    25% {
+        border: 3px solid rgb(0, 4, 248);
+    }
+
+    50% {
+        border: 3px solid rgb(0, 255, 64);
+    }
+
+    75% {
+        border: 3px solid rgb(0, 217, 255);
+    }
+
+    100% {
+        border: 3px solid rgb(250, 0, 0);
+    }
+}
+
 .hero__thumb {
     border: 3px solid sandybrown;
     position: absolute;
@@ -62,6 +106,11 @@
 
 .hero__thumb:hover .overlay {
     transform: translateX(0);
+    animation-name: border-color;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 2000ms;
 }
 
 /* .hero__left-image {
@@ -171,6 +220,40 @@
     background-color: #fff;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px, 1px, 0px rgba(0, 0, 0, 0.14), ;
     overflow: scroll;
+}
+
+@keyframes button-move {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translate(0, 50%)
+    }
+
+    50% {
+        transform: translate(50%, 0);
+    }
+
+    75% {
+        transform: translate(50%, 50%);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+.btn__open {
+    width: 600px;
+    height: 400px;
+    animation-name: button-move;
+    background-color: black;
+    color: #fff;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .close__icon {
